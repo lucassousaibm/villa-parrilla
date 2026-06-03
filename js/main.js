@@ -9,8 +9,8 @@ window.addEventListener('load', () => {
 
             setTimeout(() => {
                 preloader.style.display = 'none';
-            }, 600);
-        }, 800);
+            }, 1600);
+        }, 2600);
     }
 });
 
