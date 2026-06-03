@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Parrilla - Preview com Placeholders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Estilos para placeholders */
+        .placeholder-img {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #d4af37;
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .placeholder-video {
+            background: linear-gradient(135deg, #000 0%, #1a1a1a 50%, #000 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .placeholder-video::before {
+            content: '🔥';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 5rem;
+            opacity: 0.3;
+            animation: flicker 2s infinite;
+        }
+        
+        @keyframes flicker {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader Premium -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <span class="logo-text">VILLA PARRILLA</span>
+                <span class="logo-subtitle">PARRILLA ARGENTINA</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <span class="logo-main">VILLA PARRILLA</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="https://livemenu.app/menu/67bf41c90afc8c31e24fc8cf" target="_blank" class="nav-link">Cardápio Digital</a></li>
+                <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+                <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <a href="https://livemenu.app/menu/67bf41c90afc8c31e24fc8cf" target="_blank" class="btn-reserva">Ver Cardápio</a>
+            <div class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="placeholder-video" style="width: 100%; height: 100%;"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Villa Parrilla</span>
+                    <span class="title-line title-highlight">Parrilla Argentina Autêntica</span>
+                </h1>
+                <p class="hero-description">Sabores tradicionais da Argentina no coração do Brasil</p>
+                <div class="hero-cta">
+                    <a href="https://livemenu.app/menu/67bf41c90afc8c31e24fc8cf" target="_blank" class="btn-primary">Ver Cardápio Digital</a>
+                    <a href="https://instagram.com/vilaparrilla" target="_blank" class="btn-secondary">Siga no Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Descubra mais</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section class="sobre reveal-section" id="sobre">
+        <div class="container-large">
+            <div class="sobre-grid">
+                <div class="sobre-content reveal-element">
+                    <span class="section-tag">Nossa História</span>
+                    <h2 class="section-title">Villa Parrilla<br>Tradição Argentina</h2>
+                    <div class="section-text">
+                        <p>
+                            O Villa Parrilla nasceu da paixão pela autêntica parrilla argentina, 
+                            trazendo para o Brasil os sabores e tradições que fazem da culinária 
+                            argentina uma das mais apreciadas do mundo.
+                        </p>
+                        <p>
+                            Nossa parrilla é preparada com técnicas tradicionais, utilizando 
+                            lenha selecionada e cortes nobres que garantem sabor, maciez e 
+                            suculência incomparáveis.
+                        </p>
+                    </div>
+                    <div class="sobre-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🔥</div>
+                            <div class="feature-text">
+                                <h4>Parrilla Tradicional</h4>
+                                <p>Técnica argentina autêntica</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🥩</div>
+                            <div class="feature-text">
+                                <h4>Cortes Argentinos</h4>
+                                <p>Seleção premium de carnes nobres</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🍷</div>
+                            <div class="feature-text">
+                                <h4>Vinhos Selecionados</h4>
+                                <p>Carta com os melhores rótulos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-images reveal-element">
+                    <div class="image-grid">
+                        <div class="image-item image-large">
+                            <div class="placeholder-img" style="width: 100%; height: 400px;">
+                                Interior do<br>Villa Parrilla
+                            </div>
+                        </div>
+                        <div class="image-item">
+                            <div class="placeholder-img" style="width: 100%; height: 250px;">
+                                Chef<br>Preparando
+                            </div>
+                        </div>
+                        <div class="image-item">
+                            <div class="placeholder-img" style="width: 100%; height: 250px;">
+                                Carne na<br>Parrilla
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nota sobre Placeholders -->
+    <section style="background: #d4af37; padding: 2rem; text-align: center;">
+        <div class="container-large">
+            <h3 style="color: #000; font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 1rem;">
+                📸 Este é um Preview com Placeholders
+            </h3>
+            <p style="color: #000; max-width: 800px; margin: 0 auto; line-height: 1.6;">
+                As áreas cinzas representam onde as imagens reais devem ser colocadas. 
+                Consulte o arquivo <strong>IMAGENS-NECESSARIAS.md</strong> para a lista completa de imagens necessárias.
+                Baixe as fotos do Instagram <a href="https://instagram.com/vilaparrilla" target="_blank" style="color: #000; text-decoration: underline; font-weight: 600;">@vilaparrilla</a> 
+                ou do <a href="https://livemenu.app/menu/67bf41c90afc8c31e24fc8cf" target="_blank" style="color: #000; text-decoration: underline; font-weight: 600;">cardápio digital</a>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Seção Cardápio (apenas 3 cards como exemplo) -->
+    <section class="cardapio reveal-section" id="cardapio">
+        <div class="container-large">
+            <div class="section-header-center">
+                <span class="section-tag">Nosso Menu</span>
+                <h2 class="section-title">Destaques da Parrilla</h2>
+                <p class="section-subtitle">
+                    Cortes argentinos preparados na parrilla tradicional
+                </p>
+            </div>
+
+            <div class="menu-grid">
+                <article class="menu-card reveal-element">
+                    <div class="card-image-container">
+                        <div class="placeholder-img card-image" style="height: 300px;">
+                            Bife de Chorizo
+                        </div>
+                        <div class="card-badge">Mais Pedido</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Bife de Chorizo</h3>
+                        <p class="card-description">
+                            Clássico argentino, corte suculento e macio, grelhado na parrilla 
+                            com ponto perfeito. Acompanha chimichurri caseiro.
+                        </p>
+                        <div class="card-details">
+                            <div class="card-info">
+                                <span class="info-label">Peso:</span>
+                                <span class="info-value">400g</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-label">Harmonização:</span>
+                                <span class="info-value">Malbec Argentino</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="card-price">Consulte</span>
+                            <a href="https://livemenu.app/menu/67bf41c90afc8c31e24fc8cf" target="_blank" class="btn-card">Ver no Menu</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card reveal-element">
+                    <div class="card-image-container">
+                        <div class="placeholder-img card-image" style="height: 300px;">
+                            Bife Ancho
+                        </div>
+                        <div class="card-badge">Chef's Choice</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Bife Ancho</h3>
+                        <p class="card-description">
+                            Corte premium com marmoreio excepcional, sabor intenso e 
+                            textura macia. Preparado na parrilla com sal grosso.
+                        </p>
+                        <div class="card-details">
+                            <div class="card-info">
+                                <span class="info-label">Peso:</span>
+                                <span class="info-value">450g</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-label">Harmonização:</span>
+                                <span class="info-value">Cabernet Sauvignon</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="card-price">Consulte</span>
+                            <a href="https://livemenu.app/menu/67bf41c90afc8c31e24fc8cf" target="_blank" class="btn-card">Ver no Menu</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card reveal-element">
+                    <div class="card-image-container">
+                        <div class="placeholder-img card-image" style="height: 300px;">
+                            Provoleta
+                        </div>
+                        <div class="card-badge">Entrada</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Provoleta</h3>
+                        <p class="card-description">
+                            Queijo provolone grelhado na parrilla, gratinado e temperado 
+                            com orégano. Servido com pão artesanal.
+                        </p>
+                        <div class="card-details">
+                            <div class="card-info">
+                                <span class="info-label">Porção:</span>
+                                <span class="info-value">Individual</span>
+                            </div>
+                            <div class="card-info">
+                                <span class="info-label">Harmonização:</span>
+                                <span class="info-value">Vinho Branco</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="card-price">Consulte</span>
+                            <a href="https://livemenu.app/menu/67bf41c90afc8c31e24fc8cf" target="_blank" class="btn-card">Ver no Menu</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="menu-cta">
+                <a href="https://livemenu.app/menu/67bf41c90afc8c31e24fc8cf" target="_blank" class="btn-primary-large">Ver Cardápio Completo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Simplificado -->
+    <footer class="footer">
+        <div class="container-large">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-brand">VILLA PARRILLA</h3>
+                    <p class="footer-tagline">Parrilla Argentina</p>
+                    <p class="footer-text">
+                        Sabor autêntico da Argentina no Brasil
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://instagram.com/vilaparrilla" target="_blank">Instagram</a></li>
+                        <li><a href="https://livemenu.app/menu/67bf41c90afc8c31e24fc8cf" target="_blank">Cardápio Digital</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Villa Parrilla. Preview com Placeholders.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
