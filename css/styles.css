@@ -495,23 +495,6 @@ section {
     margin-bottom: var(--spacing-lg);
 }
 
-/* ========================================
-   ANIMAÇÕES DE SCROLL (REVEAL)
-   ======================================== */
-.reveal-section {
-    opacity: 1;
-}
-
-.reveal-element {
-    opacity: 1;
-    transform: none;
-    transition: none;
-}
-
-.reveal-element.revealed {
-    opacity: 1;
-    transform: none;
-}
 
 /* ========================================
    SEÇÃO SOBRE
@@ -1385,10 +1368,6 @@ section {
     backface-visibility: visible;
 }
 
-.reveal-element,
-.reveal-element.revealed {
-    will-change: auto;
-}
 
 /* Made with Bob */
 
