@@ -1396,7 +1396,8 @@ section {
    SEÇÃO AVALIAÇÕES
    ======================================== */
 .avaliacoes {
-    background-color: var(--color-primary);
+    padding: 120px 0;
+    background: #fff;
 }
 
 .avaliacoes-grid {
